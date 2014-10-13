@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+              http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5"
+         xmlns="http://java.sun.com/xml/ns/javaee">
+
+  <!-- Servlets -->
+ 
+  
+  <servlet>
+    <servlet-name>FileUploadServlet</servlet-name>
+    <servlet-class>dcs.server.FileUploadServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>FileUploadServlet</servlet-name>
+    <url-pattern>/dcs/FileUploadServlet</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>DownloadServlet</servlet-name>
+    <servlet-class>dcs.server.DownloadServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>DownloadServlet</servlet-name>
+    <url-pattern>/dcs/dl</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>DataService</servlet-name>
+    <servlet-class>dcs.server.DataService</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>DataService</servlet-name>
+    <url-pattern>/dcs/DataService</url-pattern>
+  </servlet-mapping>
+  <!-- Default page to serve -->
+
+
+</web-app>
